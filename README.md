@@ -10,7 +10,6 @@ I have also used the traditional php naming conventions whenever needed for vari
 ### Example of URL:
 `http://example.com/cf-mcskin.php?vr=-25&hr=-25&hrh=0&vrla=0&vrra=0&vrll=0&vrrl=0&ratio=12&format=png&displayHair=true&headOnly=false&user=cajogos`
 
-You may test it here: <a href="http://minecraft.technewbs.com/cf-mcskin.php?vr=-25&hr=-25&hrh=0&vrla=0&vrra=0&vrll=0&vrrl=0&ratio=12&format=png&displayHair=true&headOnly=false&user=cajogos" target="_blank">TechNewbs Minecraft Server</a>
 
 ## Changes Made
 ### GET Parameters Translations
