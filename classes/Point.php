@@ -5,11 +5,30 @@
  */
 class Point
 {
+    /**
+     * @var array
+     */
     private $_originCoord;
+
+    /**
+     * @var array
+     */
     private $_destCoord = array();
+
+    /**
+     * @var bool
+     */
     private $_isProjected = false;
+
+    /**
+     * @var bool
+     */
     private $_isPreProjected = false;
 
+    /**
+     * Point constructor.
+     * @param $originCoord
+     */
     function __construct($originCoord)
     {
         if (is_array($originCoord) && count($originCoord) == 3)
@@ -22,11 +41,7 @@ class Point
         }
         else
         {
-            $this->_originCoord = array(
-                'x' => 0,
-                'y' => 0,
-                'z' => 0
-            );
+            $this->_originCoord = array('x' => 0, 'y' => 0, 'z' => 0);
         }
     }
 
@@ -70,11 +85,17 @@ class Point
         return $this->_originCoord;
     }
 
+    /**
+     * @return array
+     */
     function getDestCoord()
     {
         return $this->_destCoord;
     }
 
+    /**
+     * @return array
+     */
     function getDepth()
     {
         if (!$this->_isProjected)
@@ -84,6 +105,9 @@ class Point
         return $this->_destCoord['z'];
     }
 
+    /**
+     * @return bool
+     */
     function isProjected()
     {
         return $this->_isProjected;

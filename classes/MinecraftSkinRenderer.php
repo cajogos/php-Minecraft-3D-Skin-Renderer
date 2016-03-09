@@ -6,10 +6,7 @@
 class MinecraftSkinRenderer
 {
     const SECONDS_TO_CACHE = 604800; // Cache for 7 days
-    const FALLBACK_IMAGE = 'notfound.png';
-
-    private $width;
-    private $height;
+    const FALLBACK_IMAGE = 'res/notfound.png';
 
     /**
      * @param string $username

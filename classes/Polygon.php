@@ -153,6 +153,9 @@ class Polygon
         }
     }
 
+    /**
+     * @return bool
+     */
     function isProjected()
     {
         return $this->_isProjected;

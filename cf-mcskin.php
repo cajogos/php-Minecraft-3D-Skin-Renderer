@@ -43,11 +43,17 @@ $img_png = MinecraftSkinRenderer::getSkinImageByUsername($username);
 
 $width = imagesx($img_png);
 $height = imagesy($img_png);
+if ($height == 64 && $width == 64)
+{
+    // TODO: Implement new 64x64 skins
+}
 if (!($width == $height * 2) || $height % 32 != 0)
 {
     // Bad ratio created
     $img_png = imagecreatefrompng(MinecraftSkinRenderer::FALLBACK_IMAGE);
 }
+
+
 
 $hd_ratio = $height / 32; // Set HD ratio to 2 if the skin is 128x64
 
